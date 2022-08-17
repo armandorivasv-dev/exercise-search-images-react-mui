@@ -7,11 +7,11 @@ import { FooterContainer } from './FooterContainer';
 
 export const LayoutContainer = () => {
   return (
-  <Box section="main">
-        <Box section="navbar"><NavBar /></Box>
-        <Box section="header" ><HeaderContainer /></Box> 
-        <Box section="image-list" ><ImageListContainer  /></Box> 
-        <Box section="footer" ><FooterContainer  /></Box> 
-  </Box>
+    <Box section="main">
+          <Box section="navbar"><NavBar /></Box>
+          <Box section="header" ><HeaderContainer /></Box> 
+          <Box section="image-list" ><ImageListContainer  /></Box> 
+          <Box section="footer" ><FooterContainer  /></Box> 
+    </Box>
   )
 }
