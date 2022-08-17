@@ -22,4 +22,4 @@ Desarrollado en React, Javascript, axios, MUI y el API de pexeles Basado en comp
 3. Context:
 - ImageContext
 
-**Free Software, Hell Yeah! -  Desarrollado por: Armando Rivas**
+**Free Software, Oh Yeah! -  Desarrollado por: Armando Rivas**

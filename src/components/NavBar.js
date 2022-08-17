@@ -12,10 +12,8 @@ export const NavBar = () => {
         <Toolbar variant="dense">
           <Link href="https://armandoweb.agency/" >
             <Box component="img" sx={{ width: 120, display: { xs: 'flex', md: 'flex' } }} src={logo} />
-          </Link>  
-       
-        </Toolbar>
-        
+          </Link>         
+        </Toolbar>        
       </AppBar>
     </Box>
   );

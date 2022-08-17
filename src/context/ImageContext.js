@@ -1,6 +1,7 @@
 import React, { createContext, useState } from 'react';
 import axios from 'axios';
 import { apiKey } from '../api/apiKey';
+import { NoImage } from '../components/NoImage';
 
 export const ImageContext = createContext();
 
@@ -9,7 +10,8 @@ export const ImageContextProvider = ( { children } ) => {
   const [ perPage, setPerPage ] = useState("");
   const [ result, setResult ] = useState([]);
 
-  function handleChange (e) {    
+  function handleChange (e) {  
+    e.preventDefault()  
     const search = e.target.value;
     setSearch(search);
   }
@@ -28,6 +30,9 @@ export const ImageContextProvider = ( { children } ) => {
     }})
     .then(data=>{
       setResult(data.data.photos)
+    })
+    .catch(error=>{
+      <NoImage />
     })    
   }
 

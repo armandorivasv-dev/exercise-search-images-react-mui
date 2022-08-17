@@ -2,8 +2,8 @@ import React from 'react';
 import { Image } from './Image';
 import Grid from '@mui/material/Grid';
 
-export const ImageList = ( { result, search } ) => {
-
+export const ImageList = ( { result } ) => {
+  
   return (
     <Grid container spacing={2}> 
       {result.map((e)=>(

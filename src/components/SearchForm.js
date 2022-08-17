@@ -12,18 +12,16 @@ export const SearchForm = () => {
       <Box
         component="form"
         sx={{
-          '& > :not(style)': { m: 1, width: '25ch' },
+          '& > :not(style)': { m: 1, width: '30ch', color: 'white' },
         }}
         noValidate
         autoComplete="on"
         onSubmit={handleSubmit}
         align="center"
       >
-        <TextField onChange={handleChange} id="standard-basic" label="Busca imágenes..." variant="standard" />
-        <TextField onChange={noOfImages} id="standard-basic" label="Cantidad..." variant="standard" />
-        <Button type="submit" variant="outlined">BUSCAR</Button>
+        <TextField onChange={handleChange}   label="Busca imágenes..." id="outlined-basic"  variant="outlined" color='white' focused/>
+        <TextField onChange={noOfImages} label="Cantidad..." id="outlined-basic"  variant="outlined" color='white'focused/>
+        <Button type="submit" variant="outlined" color='white' sx={{p:1.5}}>BUSCAR</Button>
       </Box>
-
-
   )
 }
