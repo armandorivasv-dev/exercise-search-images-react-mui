@@ -1,8 +1,13 @@
 import './App.css';
+import { LayoutContainer } from './container/LayoutContainer';
+import ImageContextProvider from './context/ImageContext';
+
 
 function App() {
   return (
-    <h1>HOLA MUNDILLO</h1>
+    <ImageContextProvider>
+      <LayoutContainer/>
+    </ImageContextProvider>
   );
 }
 
